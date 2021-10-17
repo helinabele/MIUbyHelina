@@ -1,0 +1,8 @@
+    static int isMeera(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a.length; j++)
+                if (a[j] == a[i] * 2)
+                    return 0;
+        }
+        return 1;
+    }
