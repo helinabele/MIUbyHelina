@@ -37,7 +37,7 @@ Examples: Array Largest value Smallest value Difference Return value
           {200, 10, 151, 160} 200 10 200 -10 = 190 1
           {100, 19, -131, -140} 100 -140 100 - (-140 ) = 240 1
           {80, -56, 11, -81} 80 -81 -80 - 80 = -161 0
-An Sub array is defined to be an array in which each element is greater than sum of all
+5. An Sub array is defined to be an array in which each element is greater than sum of all
 elements after that. See examples below:
           {13, 6, 3, 2} is a Sub array. Note that 13 > 2 + 3 + 6, 6 > 3 + 2, 3 > 2.
           {11, 5, 3, 2} is a NOT a Sub array. Note that 5 is not greater than 3 + 2.
