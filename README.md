@@ -65,3 +65,10 @@ If you are writing in Java or C#, the function signature is int goodSpread (int[
 If you are writing in C or C++, the function signature is int goodSpread (int a[ ], int len) where len is the number of elements in the array.
 8. An Evens number is an integer whose digits are all even. For example 2426 is an Evens number but 3224 is not.
 Write a function named isEvens that returns 1 if its integer argument is an Evens number otherwise it returns 0.
+9. An array is defined to be a Magic array if the sum of the primes in the array is equal to the first element of the array. If there are no primes in the array, the first element must be 0. So {21, 3, 7, 9,11 4, 6} is a Magic array because 3, 7, 11 are the primes in the array and they sum to 21 which is the first element of the array. {13, 4, 4, 4, 4} is also a Magic array because the sum of the primes is 13 which is also the first element. Other Magic arrays are {10, 5, 5}, {0, 6, 8, 20} and {3}. {0} is not a
+Magic array because the sum of the primes is 5+5+3 = 13. Note that -5 is not a prime because prime numbers are positive.
+Write a function named isMagicArray that returns 1 if its integer array argument is a Magic array. Otherwise it returns 0.
+If you are writing in Java or C#, the function signature is int isMagicArray (int[ ] a)
+If you are writing in C or C++, the function signature is int isMagicArray (int a[ ], int len) where len is the number of elements in the array.
+You may assume that a function named isPrime exists that returns 1 if its int argument is a prime,
+otherwise it returns 0. You do not have to write this function! You are allowed to use it.
