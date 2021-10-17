@@ -72,3 +72,22 @@ If you are writing in Java or C#, the function signature is int isMagicArray (in
 If you are writing in C or C++, the function signature is int isMagicArray (int a[ ], int len) where len is the number of elements in the array.
 You may assume that a function named isPrime exists that returns 1 if its int argument is a prime,
 otherwise it returns 0. You do not have to write this function! You are allowed to use it.
+10. An array is defined to be complete if the conditions (a), (d) and (e) below hold.
+          a. The array contains even numbers
+          b. Let min be the smallest even number in the array.
+          c. Let max be the largest even number in the array.
+          d. min does not equal max
+          e. All numbers between min and max are in the array
+For example {-5, 6, 2, 3, 2, 4, 5, 11, 8, 7} is complete because
+          a. The array contains even numbers
+          b. 2 is the smallest even number
+          c. 8 is the largest even number
+          d. 2 does not equal 8
+          e. the numbers 3, 4, 5, 6, 7 are in the array.
+Examples of arrays that are not complete are:
+          {5, 7, 9, 13} condition (a) does not hold, there are no even numbers.
+          {2, 2} condition (d) does not hold
+          {2, 6, 3, 4} condition (e) does not hold (5 is missing)
+Write a function named isComplete that returns 1 if its array argument is a complete array. Otherwise it returns 0.
+If you are writing in Java or C#, the function signature is int isComplete (int[ ] a)
+If you are writing in C or C++, the function signature is int isComplete (int a[ ], int len) where len is the number of elements in the array.
