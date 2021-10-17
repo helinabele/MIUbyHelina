@@ -1,0 +1,12 @@
+    static int isSub2(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            int sum = 0;
+            if (i == a.length - 1)
+                break;
+            for (int j = i + 1; j < a.length; j++)
+                sum += a[j];
+            if (sum >= a[i])
+                return 0;
+        }
+        return 1;
+    }
