@@ -1,0 +1,12 @@
+    static int minDistance(int n) {
+        int min = n;
+        for (int i = 1; i < n; i++) {
+                for (int j = i + 1; j < n; j++)
+                    if (n % i == 0 && n % j == 0) {
+                        if (min > j - i)
+                            min = j - i;
+                        break;
+                    }
+        }
+        return min;
+    }
