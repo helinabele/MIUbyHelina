@@ -143,3 +143,11 @@ So {1, 2, 3, 9, 6, 13} and {3, 4, 6, 7, 13, 15}, {1, 2, 3, 4, 10, 11, 12} and {3
 Write a function named isBean that returns 1 if its array argument is a Bean array, otherwise it returns 0.
 If you are programming in Java or C#, the function signature is int isBean (int[ ] a)
 If you are programming in C or C++, the function signature is int isBean (int a[ ], int len) where len is the number of elements in the array.
+20. Write a function named countDigit that returns the number of times that a given digit appears in a positive number. For example countDigit(32121, 1) would return 2 because there are two 1s in 32121.
+Other examples:
+          countDigit(33331, 3) returns 4
+          countDigit(33331, 6) returns 0
+          countDigit(3, 3) returns 1
+The function should return -1 if either argument is negative, so countDigit(-543, 3) returns -1.
+The function signature is int countDigit(int n, int digit)
+Hint: Use modulo base 10 and integer arithmetic to isolate the digits of the number.
