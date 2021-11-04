@@ -1,0 +1,14 @@
+    public static int isBean(int[] a) {
+        boolean nine = false, thirteen = false, seven = false, sixteen = true;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == 9)
+                nine = true;
+            if (a[i] == 13)
+                thirteen = true;
+            if (a[i] == 7)
+                seven = true;
+            if (a[i] == 16)
+                sixteen = false;
+        }
+        return (nine && !thirteen) || (seven && !sixteen) ? 0 : 1;
+    }
