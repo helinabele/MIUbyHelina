@@ -164,3 +164,11 @@ Other Nice arrays include {2, 2, 3, 3, 3}, {1, 1, 1, 2, 1, 1} and {0, -1, 1}. Th
 Write a function named isNice that returns 1 if its array argument is a Nice array. Otherwise it returns a 0.
 If you are programming in Java or C#, the function signature is int isNice(int[ ] a)
 If you are programming in C or C++, the function signature is int isNice(int a[ ], int len) where len is the number of elements in the array
+23. An integer is defined to be “continuous factored” if it can be expressed as the product of two or more continuous integers greater than 1.
+    Examples of “continuous factored” integers are:
+          6 = 2 * 3.
+          60 = 3 * 4 * 5
+          120 = 4 * 5 * 6
+          90 = 9*10
+Examples of integers that are NOT “continuous factored” are: 99 = 9*11, 121=11*11, 2=2, 13=13
+Write a function named isContinuousFactored(int n) that returns 1 if n is continuous factored and 0 otherwise.
