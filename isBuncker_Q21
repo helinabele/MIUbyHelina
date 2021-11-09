@@ -1,0 +1,8 @@
+    static int isBuncker(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a.length; j++)
+                if (a[i] == 1 && isPrime(a[j]) && a[j] != 1)
+                    return 1;
+        }
+        return 0;
+    }
