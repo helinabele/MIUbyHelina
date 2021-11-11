@@ -178,3 +178,5 @@ The following are NOT twin arrays:
           {13, 14, 15, 3, 5} // 13 has a twin prime and it is missing in the array
           {1, 17, 8, 25, 67} // 17 has a twin prime and it is missing in the array
 Write a function named isTwin(int[ ] arr) that returns 1 if its array argument is a Twin array, otherwise it returns 0.
+25. Let us define two arrays as “set equal” if every element in one is also in the other and vice-versa.
+For example, any two of the following are equal to one another: {1, 9, 12}, {12, 1, 9}, {9, 1, 12, 1}, {1, 9, 12, 9, 12, 1, 9}. Note that {1, 7, 8} is not set equal to {1, 7, 1} or {1, 7, 6}. Write a function named isSetEqual(int[ ] a, int[ ] b) that returns 1 if its array arguments are set equal, otherwise it returns 0.
