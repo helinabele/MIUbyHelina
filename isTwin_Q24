@@ -1,3 +1,27 @@
+static int twinArray(int[] a) {
+        boolean twinPrimeFlag;
+        for (int a1 : a) {
+            twinPrimeFlag = true;
+            if (isPrime(a1) && (isPrime(a1 - 2) || isPrime(a1 + 2))) {
+                twinPrimeFlag = false;
+                for (int a2 : a) {
+                    if (isPrime(a1 - 2) && a2 == a1 - 2) {
+                        twinPrimeFlag = true;
+                        break;
+                    }
+                    if (isPrime(a1 + 2) && a2 == a1 + 2) {
+                        twinPrimeFlag = true;
+                        break;
+                    }
+                }
+            }
+            if (!twinPrimeFlag)
+                return 0;
+        }
+        return 1;
+    }
+    
+    .......................................................................
 static int isTwin(int n) {
         if (isPrime(n)) {
             if (isPrime(n - 2) || isPrime(n + 2))
