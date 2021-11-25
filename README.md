@@ -193,3 +193,11 @@ not a Nice array because the sum of the primes is 5+5+3 = 13 but the first eleme
 Write a function named isNiceArray that returns 1 if its integer array argument is a Nice array. Otherwise it returns 0.
           The function signature is int isNiceArray (int[ ] a)
 You may assume that a function named isPrime exists that returns 1 if its int argument is a prime, otherwise it returns 0. You do **not** have to write this function! You just have to call it.
+29.  An array is defined to be complete if all its elements are greater than 0 and all even numbers that are less than the maximum even number are in the array.
+For example {2, 3, 2, 4, 11, 6, 10, 9, 8} is complete because 
+          a. all its elements are greater than 0
+          b. the maximum even integer is 10
+          c. all even numbers that are less than 10 (2, 4, 6, 8) are in the array.
+But {2, 3, 3, 6} is not complete because the even number 4 is missing. {2, -3, 4, 3, 6} is not complete because it contains a negative number.
+Write a function named isComplete that returns 1 if its array argument is a complete array. Otherwise it returns 0.
+          The function signature is int isComplete (int[ ] a)
