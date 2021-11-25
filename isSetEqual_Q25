@@ -1,18 +1,21 @@
- static int isSetEqual(int[] a, int[] b) {
+static int isSetEqual(int[] a, int[] b) {
         for (int anA : a) {
             boolean subSet = false;
             for (int aB : b) {
-                if (aB == anA) subSet = true;
-                break;
+                if (aB == anA) {
+                    subSet = true;
+                    break;
+                }
             }
             if (!subSet) return 0;
         }
-
         for (int aB : b) {
             boolean subSet = false;
             for (int anA : a) {
-                if (aB == anA) subSet = true;
-                break;
+                if (aB == anA) {
+                    subSet = true;
+                    break;
+                }
             }
             if (!subSet) return 0;
         }
