@@ -184,6 +184,12 @@ For example, any two of the following are equal to one another: {1, 9, 12}, {12,
 Write function named isSmart that returns 1 if its argument is a Smart number, otherwise it returns 0.
           So isSmart(11) returns 1, isSmart(22) returns 1 and isSmart(8) returns 0.
           The function signature is int isSmart(int n)
-27. . Define a Dual array to be an array where every value occurs exactly twice. For example, {1, 2, 1, 3, 3, 2} is a dual array.The following arrays are not Dual arrays {2, 5, 2, 5, 5} (5 occurs three times instead of two times) {3, 1, 1, 2, 2} (3 occurs once instead of two times) Write a function named isDual that returns 1 if its array argument is a Dual array. Otherwise it returns 0.
+27. Define a Dual array to be an array where every value occurs exactly twice. For example, {1, 2, 1, 3, 3, 2} is a dual array.The following arrays are not Dual arrays {2, 5, 2, 5, 5} (5 occurs three times instead of two times) {3, 1, 1, 2, 2} (3 occurs once instead of two times) Write a function named isDual that returns 1 if its array argument is a Dual array. Otherwise it returns 0.
 If you are programming in Java or C#, the function signature is int isDual (int[ ] a)
 If you are programming in C or C++, the function signature is int isDual (int a[ ], int len) where len is the number of elements in the array
+28. An array is defined to be a Nice array if the sum of the primes in the array is equal to the first element of the array. If there are no primes in the array, the first element must be 0. So {21, 3, 7, 9, 11 4, 6} is a Nice array because 3, 7, 11 are the primes in the array and they sum to 21 which is the first element of the array. {13, 4, 4,4, 4} is also a Nice array because the sum of the primes is 13 which is also the first element. Other Nice arrays are {10, 5, 5}, {0, 6, 8, 20} and {3}. {8, 5, -5, 5, 3} is
+not a Nice array because the sum of the primes is 5+5+3 = 13 but the first element of the array is 8.
+          Note that -5 is not a prime because prime numbers are positive.
+Write a function named isNiceArray that returns 1 if its integer array argument is a Nice array. Otherwise it returns 0.
+          The function signature is int isNiceArray (int[ ] a)
+You may assume that a function named isPrime exists that returns 1 if its int argument is a prime, otherwise it returns 0. You do **not** have to write this function! You just have to call it.
