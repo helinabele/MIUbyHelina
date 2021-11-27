@@ -1,0 +1,21 @@
+    static int completed(int[] a) {
+        int max = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] <= 0) return 0;
+            if (a[i] % 2 == 0) {
+                if (a[i] > max)
+                    max = a[i];
+            }
+        }
+        int count = 0, maximum = max;
+        while (max >= 2) {
+            for (int i = 0; i < a.length; i++) {
+                if (max == a[i]) {
+                    count++;
+                    break;
+                }
+            }
+            max = max - 2;
+        }
+        return count == maximum / 2 ? 1 : 0;
+    }

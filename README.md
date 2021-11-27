@@ -201,3 +201,28 @@ For example {2, 3, 2, 4, 11, 6, 10, 9, 8} is complete because
 But {2, 3, 3, 6} is not complete because the even number 4 is missing. {2, -3, 4, 3, 6} is not complete because it contains a negative number.
 Write a function named isComplete that returns 1 if its array argument is a complete array. Otherwise it returns 0.
           The function signature is int isComplete (int[ ] a)
+30. Two integers are defined to be factor equal, if they have the same number of factors. For example,
+integers 10 and 33 are factor equal because, 10 has four factors: 1, 2, 5, 10 and 33 also has four factors: 1, 3, 11, 33. On the other hand, 9 and 10 are not factor equal since 9 has only three factors: 1, 3, 9 and 10 has four factors: 1, 2, 5, 10.
+Write a function named factorEqual(int n, int m) that returns 1 if n and m are factor equal and 0 otherwise.
+31. Define a Meera array to be an array a if it satisfies two conditions:
+    (a) a[i] is less than i for i = 0 to a.length-1.
+    (b) sum of all elements of a is 0.
+For example, {-4, 0, 1, 0, 2, 1} is a Meera array because
+    -4 = a[0] < 0
+    0 = a[1] < 1
+    1 = a[2] < 2
+    0 = a[3] < 3
+    2 = a[4] < 4
+    1 = a[5] < 5
+    and -4 + 0 + 1 + 0 + 2 + 1 = 0
+{-8, 0, 0, 8, 0} is not a Meera array because a[3] is 8 which is not less than 3. Thus condition (a) fails.
+{-8, 0, 0, 2, 0} is not a Meera array because -8 + 2 = -6 not equal to zero. Thus condition (b) fails.
+Write a function named isMeera that returns 1 if its array argument is a Meera array. Otherwise it returns 0.
+If you are programming in Java or C#, the function signature is int isMeera (int[ ] a)
+If you are programming in C or C++, the function signature is int isMeera (int a[ ], int len) where len is the number of elements in the array.
+32. Define a Triple array to be an array where every value occurs exactly three times.For example, {3, 1, 2, 1, 3, 1, 3, 2, 2} is a Triple array. The following arrays are not Triple arrays
+    {2, 5, 2, 5, 5, 2, 5} (5 occurs four times instead of three times)
+    {3, 1, 1, 1} (3 occurs once instead of three times)
+Write a function named isTriple that returns 1 if its array argument is a Triple array. Otherwise it returns 0.
+If you are programming in Java or C#, the function signature is int isTriple (int[ ] a)
+If you are programming in C or C++, the function signature is int isTriple (int a[ ], int len) where len is the number of elements in the array.
