@@ -1,3 +1,5 @@
+![GitHub Repo stars](https://img.shields.io/github/stars/helinabele/MIUbyHelina?style=flat-square)
+
 # MIUbyHelina
 1. Write a function named countDigit that returns the number of times that a given digit appears in a positive
 number. For example countDigit(32121, 1) would return 2 because there are two 1s in 32121. Other examples:
