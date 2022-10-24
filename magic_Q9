@@ -1,8 +1,8 @@
     static int magic(int[] a) {
         int sum = 0;
         for (int i = 1; i < a.length; i++) {
-            if (isPrime(a[i]))
+            if (isPrime(a[i]) == 1 && a[i] > 0)
                 sum += a[i];
         }
-        return a[0] == sum ? 1 : 0;
+        return (a[0] == sum && a[0] != 0) ? 1 : 0;
     }
